@@ -8,14 +8,14 @@ using System.Data.SqlClient;
 using Microsoft.Extensions.Configuration;
 using LuxFacta.Entities;
 
-namespace LuxFacta.Repository
+namespace LuxFacta.Repositorys
 {
-    public class LuxFactaRepository : ILuxFactaRepository
+    public class PollRepository : ILuxFactaRepository
     {  
 
         private readonly string  _connString;
 
-        public LuxFactaRepository(IConfiguration config)
+        public PollRepository(IConfiguration config)
         {
             _connString = config["ConnString"];
          

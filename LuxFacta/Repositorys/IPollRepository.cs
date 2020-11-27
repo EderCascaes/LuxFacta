@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using LuxFacta.Entities;
 
-namespace LuxFacta.Repository
+namespace LuxFacta.Repositorys
 {
     public interface ILuxFactaRepository
     {

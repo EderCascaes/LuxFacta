@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using LuxFacta.Entities;
-using LuxFacta.Service;
+using LuxFacta.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
@@ -11,12 +11,12 @@ using Newtonsoft.Json;
 namespace LuxFacta.Controllers
 {
     [Produces("application/json")]
-    [Route("api/LuxFacta")]
-    public class LuxFactaController : Controller
+    [Route("api/")]
+    public class PollController : Controller
     {
-        private readonly ILuxFactaService _luxFactaService;
+        private readonly IPollService _luxFactaService;
 
-        public LuxFactaController(ILuxFactaService luxFactaService)
+        public PollController(IPollService luxFactaService)
         {
             _luxFactaService = luxFactaService;
         }

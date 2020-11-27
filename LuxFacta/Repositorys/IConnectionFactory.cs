@@ -5,7 +5,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace LuxFacta.Repository
+namespace LuxFacta.Repositorys
 {
     public interface IConnectionFactory
     {

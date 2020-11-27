@@ -3,15 +3,15 @@ using System.Collections.Generic;
 using System.Dynamic;
 using System.Threading.Tasks;
 using LuxFacta.Entities;
-using LuxFacta.Repository;
+using LuxFacta.Repositorys;
 
-namespace LuxFacta.Service
+namespace LuxFacta.Services
 {
-    public class LuxFactaService : ILuxFactaService
+    public class PollService : IPollService
     {
         private readonly ILuxFactaRepository _repository;
 
-        public LuxFactaService(ILuxFactaRepository repository)
+        public PollService(ILuxFactaRepository repository)
         {
             _repository = repository;
         }

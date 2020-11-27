@@ -25,8 +25,8 @@ namespace LuxFacta
         {
             services.AddMvc();
 
-            services.AddScoped<Service.ILuxFactaService, Service.LuxFactaService>();
-            services.AddScoped<Repository.ILuxFactaRepository, Repository.LuxFactaRepository>();
+            services.AddScoped<Services.IPollService, Services.PollService>();
+            services.AddScoped<Repositorys.ILuxFactaRepository, Repositorys.PollRepository>();
         
         }
 
