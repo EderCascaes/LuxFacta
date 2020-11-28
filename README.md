@@ -7,7 +7,7 @@ https://github.com/EderCascaes/LuxFacta
 
 2. Se você pudesse voltar no tempo e se dar um conselho no início do desafio, qual
 seria?
-	No votar não verifica se a opção escolhida existe, somente a Enquete
+	No votar não verifica se a opção escolhida existe, somente a Enquete é ferificado.
 
 3. Se você pudesse mudar algo na proposta/definição do desafio, o que seria?
 	Talves retornar  o porcentagem de votos para cada opção com seu posicionamento,
@@ -21,6 +21,10 @@ seria?
 
 
 
+
+TABELAS CRIADAS
+
+CREATE DATABASE LUXFACTA;
 
 CREATE TABLE SURVEY(
 	[poll_id] INT  PRIMARY KEY NOT NULL ,
