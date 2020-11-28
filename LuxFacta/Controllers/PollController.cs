@@ -42,7 +42,7 @@ namespace LuxFacta.Controllers
 
         [Route("poll/{id}/vote")]
         [HttpPost]
-        public async Task<IActionResult> PostVoteAsync([FromBody]Request_Option_id request, int id)
+        public async Task<IActionResult> PostVoteAsync([FromBody]Request_Option request, int id)
         {
             if (await _luxFactaService.PostVoteAsync(request.option_id, id) == 0)
                 return NotFound("Enquete não encontrada");
